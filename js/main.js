@@ -1,15 +1,4 @@
-  function initMap() {
-      // The location of Cairo
-      var cairo = {lat: 30.044420, lng: 31.235712};
-      // The map, centered at Cairo
-      var map = new google.maps.Map(
-          document.querySelector(".map"), {zoom: 4, center: cairo});
-      // The marker, positioned at Cairo
-      var marker = new google.maps.Marker({position: cairo, map: map});
-    }
-    
-    
-    // Smooth scrolling
+   // Smooth scrolling
     $("#navbar a, .btn").on("click", function(event) {
     
       if(this.hash !== "") {
@@ -75,10 +64,7 @@
     var conpass = document.getElementById('conpass').value;
     var email = document.getElementById('email').value;
     var mobile = document.getElementById('mobile').value;
-    
-    var myform = document.getElementById('myform');
-    // to check if that field empty or not
-    
+    var myform = document.getElementById('myform');    
   
   //  to accert a name of 3 letters at least
     if(user.length<3){
